@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALUDADOR</title>
+</head>
+
+<body>
+    <form id="saludador-form">
+      <label for="name">Tu nombre:</label>
+      <input type="text" id="name" />
+      <label for="gender">Tu genero:</label>
+      <input type="text" id="gender"> 
+      <label for="age">Edad:</label>
+      <input type="number" id="age"> 
+      <input type="submit" value="SALUDAR" id="saludar-button" />
+    </form>
+    <div id="resultado-div"></div>
+
+    <script type="module" src="./src/presenter-saludador.js"></script>
+</body>
+</html>
