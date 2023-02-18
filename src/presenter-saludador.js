@@ -1,4 +1,5 @@
 import verificar from "./verificar_formulario";
+
 const user_name = document.querySelector("#name");
 const user_gender = document.querySelector("#gender");
 const user_age = document.querySelector("#age");
