@@ -1,5 +1,5 @@
 function verificarIdiomas(idioma){
-    const idioma_seleccionado = "idioma";
+    var idioma_seleccionado = "idioma";
     if(idioma == "ES"){
         idioma_seleccionado = "esp";
     }
