@@ -9,5 +9,8 @@ const edad_usuario =Number.parseInt(user_age);
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  div.innerHTML = verificar(user_name.value, user_age.value, user_gender.value);
+  let fechaActual = new Date();
+  let horaActual = fechaActual.getHours();
+
+  div.innerHTML = verificar(user_name.value, user_age.value, user_gender.value, horaActual);
 });

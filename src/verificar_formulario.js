@@ -1,15 +1,29 @@
-function verificar(name, age, gender) {
+function verificar(name, age, gender, hour) {
+    let horario = " ";
+    if(hour >= 1 && hour < 12)    {
+        horario = "Buenos Dias";
+    }
+    else if (hour > 12 && hour < 20){
+        horario = "Buenos Tardes";
+    }
+    else{
+        horario = "Buenos Noches";
+    }
+
     if (gender == "M") {
         if (age > 30) {
-          return "Hola Señor " + name;
-        } else {
-          return "Hola joven " + name;
+          return horario + " Señor " + name;
+        } 
+        else {
+          return horario + " Joven " + name;
         }
-      } else if (gender == "F") {
+      } 
+      else if (gender == "F") {
         if (age > 30) {
-          return "Hola Señora " + name;
-        } else {
-          return "Hola jovencita " + name;
+          return horario + " Señora " + name;
+        } 
+        else {
+          return horario + " Jovencita " + name;
         }
       }
   }
