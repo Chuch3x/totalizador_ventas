@@ -1,4 +1,4 @@
-import mostrar_impuestos from "./calcular_total";
+import calcular_precio_neto from "./calcular_total";
 
 const total_items = document.querySelector("#cantidad_items");
 const precio_items = document.querySelector("#precio_item");
@@ -18,5 +18,5 @@ const impuestos = new Map([
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  div.innerHTML = "<p>" + "La cant de items es: " +total_items.value + " y el precio unitario es: "+ precio_items.value + " el estado selecionado es: " + estados.value + " el impuesto es" + mostrar_impuestos(impuestos,estados.value) + "<p>";
+  div.innerHTML = "<p>" + "El precio neto es: " + calcular_precio_neto(total_items.value, precio_items.value) + "<p>";
 });
