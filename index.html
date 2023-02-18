@@ -1,25 +1,30 @@
-<html>
-  <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" id="sumar-button" />
-    </form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALUDADOR</title>
+</head>
 
-    <h1>Multiplicador</h1>
-    <form id="multiplicar-form">
-      <label for="tercer-numero">Tercer número:</label>
-      <input type="number" id="tercer-numero" />
-      <label for="cuarto-numero">Cuarto número:</label>
-      <input type="number" id="cuarto-numero" />
-      <input type="submit" value="Multiplicar" id="multiplicar-button" />
+<body>
+  <select name="idiomas" id="idiomas">
+    <option value="ES">ES</option>
+    <option value="EN">EN</option>
+  </select>
+
+    <form id="saludador-form">
+      <label for="name">Tu nombre:</label>
+      <input type="text" id="name" />
+      <label for="gender">Tu genero:</label>
+      <input type="text" id="gender"> 
+      <label for="age">Edad:</label>
+      <input type="number" id="age"> 
+      <input type="submit" value="SALUDAR" id="saludar-button" />
     </form>
 
     <div id="resultado-div"></div>
+    <script type="module" src="./src/presenter-saludador.js"></script>
 
-    <script type="module" src="./src/presenter.js"></script>
-  </body>
+</body>
 </html>
