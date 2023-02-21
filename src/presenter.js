@@ -18,5 +18,5 @@ const impuestos = new Map([
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  div.innerHTML = "<p>" + "El precio neto es: " + calcular_precio_neto(total_items.value, precio_items.value) + "<p>";
+  div.innerHTML = "<p>" + "El precio neto es: " + calcular_precio_neto(total_items.value, precio_items.value, estados.value, impuestos) + "<p>";
 });
